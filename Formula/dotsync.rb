@@ -1,8 +1,8 @@
 class Dotsync < Formula
   desc "A powerful and versatile dotfiles manager"
   homepage "https://github.com/HarveyGG/dotsync"
-  url "https://github.com/HarveyGG/dotsync/archive/v1.0.8.tar.gz"
-  sha256 "b94a0ed21cbc6c59d20e37987151835bfce838a93a18b30d6fd691f8462c7639"
+  url "https://github.com/HarveyGG/dotsync/archive/v1.0.9.tar.gz"
+  sha256 "87fe23042c056c19eb654c1912c4bf5f24b95dbb87825f21e4015d87506ffc76"
   license "Non-Commercial"
   head "https://github.com/HarveyGG/dotsync.git", branch: "main"
 
@@ -11,7 +11,7 @@ class Dotsync < Formula
   def install
     (bin/"dotsync").write <<~EOS
       #!/bin/bash
-      exec #{Formula["uv"].opt_bin}/uvx dotsync-cli "$@"
+      exec #{Formula["uv"].opt_bin}/uvx --from dotsync-cli dotsync "$@"
     EOS
     
     chmod 0755, bin/"dotsync"
