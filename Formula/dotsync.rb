@@ -1,8 +1,8 @@
 class Dotsync < Formula
   desc "A powerful and versatile dotfiles manager"
   homepage "https://github.com/HarveyGG/dotsync"
-  url "https://github.com/HarveyGG/dotsync/archive/v1.0.14.tar.gz"
-  sha256 "abbf441fb40f7feae48b0bed8e466f3cd46c9a318ab8ecd0811b36833ea238f4"
+  url "https://github.com/HarveyGG/dotsync/archive/v1.0.15.tar.gz"
+  sha256 "f7cc9a14080009a64ef7039cad052af4bda14377b819fb01ca9296786daf59ef"
   license "Non-Commercial"
   head "https://github.com/HarveyGG/dotsync.git", branch: "main"
 
